@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal</title>
+</head>
+<body>
+<h1>Portal</h1>
+<script>
+    var workouts = [
+    {exercise: "Pull",
+        visible: true},
+    {exercise: "Push",
+        visible: true},
+    {exercise: "Legs",
+        visible: true},
+    {exercise: "Other",
+        visible: false}];
+    workouts.forEach(function(workout){
+        if(workout["visible"] === true)
+            document.write(workout["exercise"] , "<br>");
+    });
+</script>
+</body>
+</html>
